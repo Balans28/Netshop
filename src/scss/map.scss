@@ -1,0 +1,101 @@
+.map-box {
+  position: relative;
+
+
+  &__address {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 461px;
+    height: 271px;
+    background-color: #C70101;
+    z-index: 5;
+    padding: 51px 0 60px;
+  }
+
+  &__street {
+    @include text($Museo500, 20px, #FFFFFF);
+    text-align: center;
+    opacity: 1
+  }
+
+  &__number {
+    @include text($Museo700, 20px, #FFFFFF);
+    padding: 36px 0 24px;
+    text-align: center;
+    opacity: 1;
+
+  }
+
+  &__social {
+    font-size: 50px;
+    text-align: center;
+    line-height: 8px;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+
+  }
+
+
+  &__facebook {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      transition: 0.5s ease-out;
+      transform: scale(1.2);
+      box-shadow: 0 0 15px #FFFFFF;
+      border-color: #3b5998;
+
+    }
+  }
+
+  &__instagram {
+
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      transition: 0.5s ease-out;
+      transform: scale(1.2);
+      box-shadow: 0 0 15px #FFFFFF;
+      border-color: darkviolet;
+
+    }
+  }
+
+  &__pinterest {
+
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      transition: 0.5s ease-out;
+      transform: scale(1.2);;
+      box-shadow: 0 0 15px #FFFFFF;
+
+
+    }
+  }
+}
+
